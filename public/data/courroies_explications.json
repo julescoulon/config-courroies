@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "section_title": "Catégorie de la courroie",
+      "questions": [
+        {
+          "title": "Explications 1.1",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id enim natura desiderat. Duo enim genera quae erant, fecit tria. ",
+          "image_url": "https://picsum.photos/400"
+        },
+        {
+          "title": "Explications 1.1",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id enim natura desiderat. Duo enim genera quae erant, fecit tria. "
+        }
+      ]
+    },
+    {
+      "section_title": "Type de la courroie"
+    },
+    {
+      "section_title": "Taille de la courroie",
+      "questions": [
+        {
+          "title": "Explications 1.1",
+          "anwser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id enim natura desiderat. Duo enim genera quae erant, fecit tria. ",
+          "image_url": "https://picsum.photos/400"
+        },
+        {
+          "title": "Explications 1.1",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id enim natura desiderat. Duo enim genera quae erant, fecit tria. ",
+          "image_url": "https://picsum.photos/400"
+        }
+      ]
+    }
+  ]
+}

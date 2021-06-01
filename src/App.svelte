@@ -1,43 +1,32 @@
-<script context="module">
-	let fetchData = async (request) => {
-		let res = await fetch(`data/${request}.json`);
-		res = (await res.json()).data;
-		return res;
-	};
-</script>
-
 <script>
-	import Select from "./components/Select.svelte";
+  import { fetchData, getData } from "./functions/fetchData";
+  import { filterData } from "./functions/filterData";
 
-	$: selection = [];
+  import Code from "./components/Code.svelte";
+  import Form from "./components/Form.svelte";
+
+  const objectDepth = 3;
+
+  $: selection = Array(objectDepth);
+  fetchData("courroies");
+  fetchData("courroies_explications");
+
+  let displayData = filterData(getData("courroies"), selection);
+  let explications = getData("courroies_explications");
+
+  import { setContext } from "svelte";
+  setContext("newSelection", { newSelection });
+
+  function newSelection() {
+    displayData = filterData(getData("courroies"), selection);
+  }
 </script>
 
-{#await fetchData("courroies") then data}
-	<form>
-		<fieldset>
-			<legend>Courroies trapézoïdales</legend>
-			{#each Array(5) as _, index}
-				<Select bind:selection {data} {index} />
-			{/each}
-		</fieldset>
-	</form>
-	<br />
-	<strong>{JSON.stringify(selection)}</strong>
-{/await}
-{#await fetchData("courroies") then data}
-	{#each data as item_1}
-		<h2>{item_1.name}</h2>
-		{#each item_1.content as item_2}
-			<details>
-				<summary><strong>{item_2.name}</strong></summary>
-				<div class="content">
-					<ul>
-						{#each item_2.content as item_3}
-							<li>{item_3}</li>
-						{/each}
-					</ul>
-				</div>
-			</details>
-		{/each}
-	{/each}
-{/await}
+<div class="container">
+  <h1>Configurateur</h1>
+  <h2>Courroies trapézoïdales</h2>
+  {#await displayData then data}
+    <Form {data} {selection} {objectDepth} {explications} />
+    <Code {selection} />
+  {/await}
+</div>

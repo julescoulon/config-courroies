@@ -1,21 +1,101 @@
 <script>
-    export let data, selection, index;
+  export let data, selection, index;
 
-    function selectData() {
-        console.log(data);
-        console.log(selection);
+  let currentDepth = 0;
+  let array = [];
+  // console.log(data);
+  function findData(data) {
+    // console.log(index, currentDepth);
+    if (index == currentDepth) {
+      array.push(data);
+    } else {
+      //Creuse un niveau
+      currentDepth++;
+      //Rappelle la fonction si possibilté de creuser
+      data.forEach((element) => {
+        findData(element.content);
+      });
+      //Réinitialise si objet de même niveau encore présent
+      if (index == currentDepth) {
+        currentDepth--;
+      }
     }
+  }
+  findData(data);
+  array = array.flat();
 
-    console.log(selection[index]);
+  function setSelection() {
+    if (index < selection.length - 1) {
+      for (let i = index + 1; i < selection.length; i++) {
+        selection[i] = null;
+      }
+    }
+    newSelection();
+  }
+
+  import { getContext } from "svelte";
+  const { newSelection } = getContext("newSelection");
 </script>
 
-<select
-    bind:value={selection[index]}
-    on:input={selectData}
-    disabled={selection[index - 1] !== null ? false : true}
->
+<!-- svelte-ignore a11y-no-onchange -->
+{#if array.length > 10}
+  <select bind:value={selection[index]} on:change={setSelection}>
     <option disabled selected value={null}>-</option>
-    {#each data as item}
-        <option value={item.name}>{item.name}</option>
+    {#each array as item}
+      <option value={item.name || item}>{item.name || item}</option>
     {/each}
-</select>
+  </select>
+{:else}
+  <div class="radio-list">
+    {#each array as item}
+      <label>
+        <input
+          type="radio"
+          bind:group={selection[index]}
+          on:change={setSelection}
+          value={item.name || item}
+        />
+        <span>{item.name || item}<span /></span></label
+      >
+    {/each}
+  </div>
+{/if}
+
+<style>
+  select,
+  option {
+    padding: 1rem;
+    font-size: inherit;
+    margin-bottom: 1rem;
+  }
+
+  .radio-list {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  label input[type="radio"] {
+    display: none;
+  }
+
+  label input[type="radio"] + span {
+    padding: 1rem;
+    display: block;
+    border: solid 1px;
+    margin-right: 1rem;
+    transition: box-shadow 0.2s ease-out;
+  }
+
+  label input[type="radio"] + span:hover {
+    box-shadow: inset 0px 0px 0px 2px black;
+  }
+
+  label:last-child input[type="radio"] + span {
+    margin-right: unset;
+  }
+
+  label input[type="radio"]:checked + span {
+    color: white;
+    background-color: black;
+  }
+</style>
