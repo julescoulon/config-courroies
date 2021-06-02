@@ -1,5 +1,5 @@
 <script>
-  export let data, selection, objectDepth, explications;
+  export let data, selection, objectDepth, explications, request;
   import Help from "./Help.svelte";
   import Select from "./Select.svelte";
 </script>
@@ -11,7 +11,7 @@
       {#if index == 0 || selection[index - 1]}
         <Select bind:selection {data} {index} />
         {#if explications[index].questions}
-          <Help {index} {explications} />
+          <Help {index} {explications} {request} />
         {/if}
       {:else}
         <p>

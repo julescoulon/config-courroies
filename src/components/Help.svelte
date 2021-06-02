@@ -1,5 +1,5 @@
 <script>
-  export let index, explications;
+  export let index, explications, request;
   let isBig = false;
 </script>
 
@@ -22,7 +22,7 @@
         </div>
         {#if question.image_url}
           <img
-            src={question.image_url}
+            src={`images/${request}/${question.image_url}`}
             class="smallImage"
             on:click={() => {
               isBig = !isBig;
@@ -30,7 +30,7 @@
           />
           {#if isBig}
             <img
-              src={question.image_url}
+              src={`images/${request}/${question.image_url}`}
               class="fullscreen-image"
               on:click={() => {
                 isBig = !isBig;
@@ -75,6 +75,7 @@
 
   .fullscreen-image {
     background-color: rgba(0, 0, 0, 0.75);
+
     position: fixed;
     top: 0;
     right: 0;

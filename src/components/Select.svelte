@@ -31,6 +31,7 @@
       }
     }
     newSelection();
+    // console.log(selection);
   }
 
   import { getContext } from "svelte";
@@ -42,7 +43,9 @@
   <select bind:value={selection[index]} on:change={setSelection}>
     <option disabled selected value={null}>-</option>
     {#each array as item}
-      <option value={item.name || item}>{item.name || item}</option>
+      <option value={item.name || item}>
+        {item.name || item}
+      </option>
     {/each}
   </select>
 {:else}
@@ -71,7 +74,7 @@
 
   .radio-list {
     display: flex;
-    margin-bottom: 1rem;
+    flex-wrap: wrap;
   }
 
   label input[type="radio"] {
@@ -83,6 +86,7 @@
     display: block;
     border: solid 1px;
     margin-right: 1rem;
+    margin-bottom: 1rem;
     transition: box-shadow 0.2s ease-out;
   }
 
