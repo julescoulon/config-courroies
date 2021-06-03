@@ -22,8 +22,11 @@
   import copy from "copy-to-clipboard";
   function copyCode() {
     copy(finalCode);
-    alert(`Le code ${finalCode} est copié.`);
+    // alert(`Le code ${finalCode} est copié.`);
+    isCopy = true;
+    setTimeout(() => (isCopy = false), 5000);
   }
+  let isCopy = false;
 </script>
 
 <section class="code">
@@ -34,8 +37,11 @@
         on:click={copyCode}
         disabled={finalCode.length == 0 ? true : false}
       >
-        Copier le code
-        <i class="fas fa-copy" />
+        {#if !isCopy}
+          <span>Copier le code</span><i class="fas fa-copy" />
+        {:else}
+          <span>Code copié !</span><i class="fas fa-clipboard-check" />
+        {/if}
       </button>
     </div>
   </div>
@@ -43,12 +49,20 @@
 
 <style>
   .code {
-    position: fixed;
+    position: static;
     bottom: 0;
     right: 0;
     left: 0;
-    background: black;
-    color: white;
+  }
+
+  .code-block {
+    display: flex;
+
+    border: solid 1px;
+    border-bottom: none;
+    margin: -1rem;
+    padding: 1rem;
+    background: white;
   }
 
   input,
@@ -60,26 +74,20 @@
 
   input {
     margin-right: auto;
+    border: solid 1px;
   }
 
   button {
+    border: solid 1px;
     background: white;
-    border: solid 2px;
-    color: red;
-
-    transition: 0.2s ease-out;
+    transition: box-shadow 0.2s ease-out;
   }
 
-  button:hover {
-    border: solid 2px;
-    background: black;
+  button:not(:disabled):hover {
+    box-shadow: inset 0px 0px 0px 2px;
   }
 
-  button:disabled {
-    color: grey;
-  }
-
-  .code-block {
-    display: flex;
+  button span {
+    margin-right: 0.5rem;
   }
 </style>

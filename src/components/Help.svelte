@@ -1,4 +1,6 @@
 <script>
+  import Image from "./Image.svelte";
+
   export let index, explications, request;
   let isBig = false;
 </script>
@@ -15,28 +17,16 @@
     {#each explications[index].questions as question}
       <div class="question">
         <div>
-          <strong>{question.title}</strong>
+          <div class="title">{question.title}</div>
           {#if question.answer}
-            <p>{question.answer}</p>
+            <div>{question.answer}</div>
+          {/if}
+          {#if question.html}
+            <div>{@html question.html}</div>
           {/if}
         </div>
         {#if question.image_url}
-          <img
-            src={`images/${request}/${question.image_url}`}
-            class="smallImage"
-            on:click={() => {
-              isBig = !isBig;
-            }}
-          />
-          {#if isBig}
-            <img
-              src={`images/${request}/${question.image_url}`}
-              class="fullscreen-image"
-              on:click={() => {
-                isBig = !isBig;
-              }}
-            />
-          {/if}
+          <Image {request} {question} />
         {/if}
       </div>
     {/each}
@@ -56,34 +46,21 @@
     border-bottom: solid 1px;
   }
 
-  summary div {
+  summary > div {
     margin-right: auto;
   }
 
   .question {
     padding: 1rem;
     display: grid;
-    grid-template-columns: 1fr 8rem;
+    grid-template-columns: 1fr max-content;
     align-items: center;
     gap: 1rem;
     grid-gap: 1rem;
   }
 
-  img {
-    width: 8rem;
-  }
-
-  .fullscreen-image {
-    background-color: rgba(0, 0, 0, 0.75);
-
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    padding: 1rem;
-    object-fit: scale-down;
+  .title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
   }
 </style>

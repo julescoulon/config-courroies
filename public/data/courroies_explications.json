@@ -5,29 +5,32 @@
       "questions": [
         {
           "title": "Courroies lisses",
+          "answer": "Veco 100 et 200",
           "image_url": "courroies-lisses.png"
         },
         {
           "title": "Courroies crantées",
+          "answer": "GTX et MX",
           "image_url": "courroies-crantees.png"
         }
       ]
     },
     {
-      "section_title": "Section de la courroie"
+      "section_title": "Catégorie de la courroie",
+      "questions": [
+        {
+          "title": "Déterminer la section",
+          "image_url": "courroies-section.jpg",
+          "html": "<table><thead><tr><th>Section</th><th>l (en mm)</th><th>h (en mm)</th><th>p (en mm)</th></tr><thead><tbody><tr><td>Z</td><td>10</td><td>6</td><td>8.5</td></tr><tr><td>A</td><td>13</td><td>8</td><td>11</td></tr><tr><td>B</td><td>17</td><td>11</td><td>14</td></tr><tr><td>C</td><td>22</td><td>14</td><td>19</td></tr><tr><td>D</td><td>32</td><td>19</td><td>27</td></tr><tr><td>SPZ</td><td>9.7</td><td>8</td><td>8.5</td></tr><tr><td>SPA</td><td>12.7</td><td>10</td><td>11</td></tr><tr><td>SPB</td><td>16.3</td><td>13</td><td>14</td></tr><tr><td>SPC</td><td>22</td><td>18</td><td>19</td></tr></tbody></table>"
+        }
+      ]
     },
     {
       "section_title": "Taille de la courroie",
       "questions": [
         {
-          "title": "Explications 1.1",
-          "anwser": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id enim natura desiderat. Duo enim genera quae erant, fecit tria. ",
-          "image_url": "https://picsum.photos/400"
-        },
-        {
-          "title": "Explications 1.1",
-          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id enim natura desiderat. Duo enim genera quae erant, fecit tria. ",
-          "image_url": "https://picsum.photos/400"
+          "title": "Label DYNAM",
+          "answer": "Pour courroies lisses, une courroie est DYNAM si sa taille est supérieur ou égale à 1500."
         }
       ]
     }
