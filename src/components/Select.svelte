@@ -1,41 +1,25 @@
 <script>
   export let data, selection, index;
-  // let currentDepth = 0;
-  // let array = [];
-  // // console.log(index, selection[index]);
-  // function findData(data) {
-  //   // console.log(index, currentDepth);
-  //   if (index == currentDepth) {
-  //     array.push(data);
-  //     // console.log(index, currentDepth, data);
-  //   } else {
-  //     //Creuse un niveau
-  //     currentDepth++;
 
-  //     //Rappelle la fonction si possibilté de creuser
-  //     data.forEach((element) => {
-  //       findData(element.content);
-  //     });
-  //     //Réinitialise si objet de même niveau encore présent
-  //     if (index == currentDepth) {
-  //       currentDepth--;
-  //     }
-  //   }
-  // }
-  // findData(data);
-  // array = array.flat();
-  let depth = 0;
-  function functionTest(data, depth) {
-    if (depth < index) {
-      depth = depth++;
-      data = functionTest(data, depth);
-      console.log(depth);
+  let currentDepth = 0;
+  function getInputs(data, currentDepth) {
+    // console.log(currentDepth, index);
+    if (currentDepth !== index) {
+      // console.log(selection[index - 1]);
+      data.forEach((element) => {
+        if (selection[currentDepth] == element.name) {
+          data = getInputs(element.content, currentDepth + 1);
+        }
+      });
+    } else {
+      // console.table(data);
     }
-
     return data;
   }
-  let array = functionTest(data, depth);
-  // console.log(index, currentDepth, data);
+  // console.groupCollapsed("Section " + index);
+  let array = getInputs(data, currentDepth);
+  // console.groupEnd();
+  // console.table(selection);
 
   function setSelection() {
     if (index < selection.length - 1) {
@@ -52,29 +36,35 @@
 </script>
 
 <!-- svelte-ignore a11y-no-onchange -->
-{#if array.length > 10}
-  <select bind:value={selection[index]} on:change={setSelection}>
-    <option disabled selected value={null}>-</option>
-    {#each array as item}
-      <option value={item.name || item}>
-        {item.name || item}
-      </option>
-    {/each}
-  </select>
+{#if array.length > 0}
+  {#if array.length > 8}
+    <select bind:value={selection[index]} on:change={setSelection}>
+      <option disabled selected value={null}>-</option>
+      {#each array as item}
+        <option value={item.name || item}>
+          {item.name || item}
+        </option>
+      {/each}
+    </select>
+  {:else}
+    <div class="radio-list">
+      {#each array as item}
+        <label>
+          <input
+            type="radio"
+            bind:group={selection[index]}
+            on:change={setSelection}
+            value={item.name || item}
+          />
+          <span>{item.name || item}<span /></span></label
+        >
+      {/each}
+    </div>
+  {/if}
 {:else}
-  <div class="radio-list">
-    {#each array as item}
-      <label>
-        <input
-          type="radio"
-          bind:group={selection[index]}
-          on:change={setSelection}
-          value={item.name || item}
-        />
-        <span>{item.name || item}<span /></span></label
-      >
-    {/each}
-  </div>
+  <p style="color:crimson">
+    Oups ! Aucune donnée renseignée avec cette sélection. 🤷‍♂️
+  </p>
 {/if}
 
 <style>

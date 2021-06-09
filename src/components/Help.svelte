@@ -2,7 +2,6 @@
   import Image from "./Image.svelte";
 
   export let index, explications, request;
-  let isBig = false;
 </script>
 
 <details>

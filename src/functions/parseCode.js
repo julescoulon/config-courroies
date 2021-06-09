@@ -1,26 +1,47 @@
-function parseCode(code, objectDepth, selection) {
-  //Exemples de code :
-  //CT A133.5 / 3423
-  //CT SPA / 1120
-  //(Courroies trapézoïdales + Longueur primitive CC / Section + Longueur en mm)
-  let finalCode = [];
-  //Vérifie que le code est complet avant d'intépreter
-  if (code.length == objectDepth && !code.includes(null)) {
-    if (selection == "courroies") {
-      courroies(code, finalCode);
+function parseCode(selection, objectDepth, data, request) {
+  let currentDepth = 0;
+  let code = [];
+  function getCodes(data, currentDepth) {
+    if (currentDepth !== objectDepth) {
+      data.forEach((element) => {
+        if (
+          selection[currentDepth] == element.name ||
+          selection[currentDepth] == element
+        ) {
+          code.push(element.code || element.name || element);
+          data = getCodes(element.content, currentDepth + 1);
+        }
+      });
     }
   }
-  if (finalCode.length > 0) {
-    code = finalCode.join("");
-  } else {
-    code = code.join(", ");
+
+  if (!selection.includes(null)) {
+    getCodes(data, currentDepth);
+
+    switch (request) {
+      case "courroies": {
+        code = courroies(code);
+        break;
+      }
+      case "bavettes": {
+        code = bavettes(code);
+        break;
+      }
+    }
+    return code.join("");
   }
-  return code;
+
+  return code.join(", ");
 }
 
 export { parseCode };
 
-function courroies(code, finalCode) {
+function courroies(code) {
+  let res = [];
+  //Exemples de code :
+  //CT A133.5 / 3423
+  //CT SPA / 1120
+  //(Courroies trapézoïdales + Longueur primitive CC / Section + Longueur en mm)
   let [courroieTypes, courroiesSection, courroiesLongueur] = [
     code[0],
     code[1],
@@ -40,17 +61,45 @@ function courroies(code, finalCode) {
     }
   }
 
-  finalCode.push(courroieTypes, courroiesSection, courroiesLongueur);
+  res.push(courroieTypes, courroiesSection, courroiesLongueur);
 
   //Ponctuations
   //A partir de quelles variable doit commencer la ponctuaction
-  let index = finalCode.findIndex((element) => element == courroiesLongueur);
+  let index = res.findIndex((element) => element == courroiesLongueur);
   //Ajoute "/" après la variable spécifié, puis ajoute "-" entre toutes les variables suivantes
   let i = index;
-  while (i < finalCode.length) {
-    finalCode.splice(i, 0, i !== index ? "-" : "/");
+  while (i < res.length) {
+    res.splice(i, 0, i !== index ? "-" : "/");
     i += 2;
   }
 
-  return finalCode;
+  return res;
+}
+
+function bavettes(code) {
+  let res = [];
+  let [type, duretee, epaisseur, largeur] = [
+    getValue(`${code[0]}`),
+    getValue(`${code[1]}`),
+    tofixedUnits(getValue(`${code[2]}`), 2),
+    getValue(`${code[3]}`),
+  ];
+
+  function getValue(value) {
+    let number = value.split(" ")[0];
+    return number;
+  }
+
+  function tofixedUnits(value, units) {
+    let length = value.length;
+    for (let i = 0; i < units - length; i++) {
+      value = "0" + value;
+    }
+    console.log(value);
+    return value;
+  }
+
+  res.push("BA", type, duretee, "-", epaisseur, "X", largeur);
+
+  return res;
 }

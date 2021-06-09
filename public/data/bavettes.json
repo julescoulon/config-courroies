@@ -1,0 +1,128 @@
+{
+  "data": [
+    {
+      "name": "Normale (caoutchouc)",
+      "code": "N",
+      "content": [
+        {
+          "name": "45 shore (rouge)",
+          "content": [
+            {
+              "name": "6 mm",
+              "content": [100, 125, 200]
+            },
+            {
+              "name": "8 mm",
+              "content": [100, 125, 200]
+            },
+            {
+              "name": "10 mm",
+              "content": [80, 100, 125, 150, 200, 250, 300]
+            },
+            {
+              "name": "15 mm",
+              "content": [100, 125, 150, 200]
+            },
+            {
+              "name": "20 mm",
+              "content": [100, 125, 150, 200]
+            }
+          ]
+        },
+        {
+          "name": "50 shore (orange)",
+          "content": [
+            {
+              "name": "8 mm",
+              "content": [100, 125, 150, 200]
+            },
+            {
+              "name": "10 mm",
+              "content": [100, 125, 150, 200, 250]
+            },
+            {
+              "name": "15 mm",
+              "content": [100, 125, 150, 200, 250]
+            }
+          ]
+        },
+        {
+          "name": "55 shore (noir)",
+          "content": [
+            {
+              "name": "8 mm",
+              "content": [80, 100, 125, 150]
+            },
+            {
+              "name": "10 mm",
+              "content": [80, 100, 125, 150, 200, 250, 300]
+            },
+            {
+              "name": "15 mm",
+              "content": [100, 125, 150, 200]
+            },
+            {
+              "name": "20 mm",
+              "content": [125, 150, 200]
+            },
+            {
+              "name": "25 mm",
+              "content": [200]
+            }
+          ]
+        },
+        {
+          "name": "63 shore (rouge)",
+          "content": [
+            {
+              "name": "6 mm",
+              "content": [100, 125, 150, 200, 250]
+            },
+            {
+              "name": "8 mm",
+              "content": [100, 125, 150, 200, 250]
+            },
+            {
+              "name": "10 mm",
+              "content": [80, 100, 125, 150, 200, 250, 300]
+            },
+            {
+              "name": "15 mm",
+              "content": [100, 125, 150, 200, 250]
+            }
+          ]
+        },
+        {
+          "name": "60 shore ISO 284/340 (noir)",
+          "content": [
+            {
+              "name": "5 mm",
+              "content": [1500]
+            },
+            {
+              "name": "8 mm",
+              "content": [1500]
+            },
+            {
+              "name": "10 mm",
+              "content": [1500]
+            },
+            {
+              "name": "15 mm",
+              "content": [1500]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Polyuréthane",
+      "code": "P",
+      "content": []
+    },
+    {
+      "name": "TRIS",
+      "content": []
+    }
+  ]
+}

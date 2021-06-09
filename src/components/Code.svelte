@@ -1,28 +1,13 @@
 <script>
-  export let selection, data, objectDepth;
-
-  let code = [];
-  function searchCodes(data) {
-    data.forEach((element, i) => {
-      let name = element.name || element;
-      if (selection.includes(name)) {
-        code.push(element.code || name);
-        if (element.content) {
-          searchCodes(element.content);
-        }
-      }
-    });
-  }
-  searchCodes(data);
-
+  export let selection, data, objectDepth, request;
   import { parseCode } from "../functions/parseCode";
 
-  let finalCode = parseCode(code, objectDepth, selection);
+  let code = parseCode(selection, objectDepth, data, request);
 
   import copy from "copy-to-clipboard";
   let isCopy = false;
   function copyCode() {
-    copy(finalCode);
+    copy(code);
     isCopy = true;
     setTimeout(() => (isCopy = false), 5000);
   }
@@ -31,11 +16,8 @@
 <section class="code">
   <div class="container">
     <div class="code-block">
-      <input type="text" bind:value={finalCode} readonly />
-      <button
-        on:click={copyCode}
-        disabled={finalCode.length == 0 ? true : false}
-      >
+      <input type="text" bind:value={code} readonly />
+      <button on:click={copyCode} disabled={code.length == 0 ? true : false}>
         {#if !isCopy}
           <span>Copier le code</span><i class="fas fa-copy" />
         {:else}
@@ -55,29 +37,33 @@
   }
 
   .code-block {
-    display: flex;
+    display: grid;
+    gap: 1rem;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
+
     border: solid 2px;
     margin: -1rem;
     padding: 1rem;
     background: white;
   }
 
+  @media screen and (max-width: 640px) {
+    .code-block {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+    }
+  }
   input,
   button {
     padding: 0.5rem;
     font-size: inherit;
     border: none;
-  }
-
-  input {
-    margin-right: auto;
     border: solid 1px;
-    flex-grow: 1;
   }
 
   button {
-    margin-left: 1rem;
-    border: solid 1px;
     background: white;
     transition: box-shadow 0.2s ease-out;
   }

@@ -11,17 +11,20 @@
   const products = [
     { name: "Courroies", value: "courroies", depth: 3 },
     { name: "Poulies trapézoïdales", value: "poulies", depth: 4 },
-    { name: "Test", value: "test", depth: 5 },
+    { name: "Bavettes caoutchouc", value: "bavettes", depth: 4 },
+    // { name: "Test", value: "test", depth: 5 },
   ];
+
   let request = undefined;
 
-  $: selection = Array(objectDepth);
+  $: selection = Array(objectDepth).fill(null);
 
   let displayData = undefined;
   let explications = undefined;
 
   function fetchProduct() {
     console.clear();
+    selection = selection.fill(null);
     fetchData(request);
     fetchData(`${request}_explications`);
     displayData = filterData(getData(request), selection);
@@ -41,13 +44,14 @@
 </script>
 
 <div class="container">
+  <span>ABM TECNA</span>
   <h1>Configurateur</h1>
   <SelectProduct bind:request {products} />
-  <h2>{request}</h2>
   {#if request !== undefined && displayData !== undefined}
     {#await displayData then data}
-      <Form {data} {selection} {objectDepth} {explications} />
-      <Code {data} {objectDepth} {selection} />
+      <Form {data} {selection} {objectDepth} {explications} {request} />
+      <Code {data} {objectDepth} {selection} {request} />
     {/await}
   {/if}
 </div>
+

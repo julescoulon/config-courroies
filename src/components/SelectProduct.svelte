@@ -9,7 +9,6 @@
   }
 </script>
 
-<h2>Sélection du produit</h2>
 <!-- svelte-ignore a11y-no-onchange -->
 <select bind:value={request} on:change={setProduct}>
   {#if request == undefined}
@@ -19,3 +18,9 @@
     <option value={product.value}>{product.name}</option>
   {/each}
 </select>
+
+<style>
+  select {
+    font-weight: bold;
+  }
+</style>
