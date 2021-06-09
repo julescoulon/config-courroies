@@ -15,18 +15,17 @@
   }
   searchCodes(data);
 
-  import { codesCourroies } from "../functions/codes/courroies";
+  import { parseCode } from "../functions/parseCode";
 
-  let finalCode = codesCourroies(code, objectDepth);
-  finalCode = finalCode.join("");
+  let finalCode = parseCode(code, objectDepth, selection);
+
   import copy from "copy-to-clipboard";
+  let isCopy = false;
   function copyCode() {
     copy(finalCode);
-    // alert(`Le code ${finalCode} est copié.`);
     isCopy = true;
     setTimeout(() => (isCopy = false), 5000);
   }
-  let isCopy = false;
 </script>
 
 <section class="code">
@@ -57,9 +56,7 @@
 
   .code-block {
     display: flex;
-
-    border: solid 1px;
-    border-bottom: none;
+    border: solid 2px;
     margin: -1rem;
     padding: 1rem;
     background: white;
@@ -75,9 +72,11 @@
   input {
     margin-right: auto;
     border: solid 1px;
+    flex-grow: 1;
   }
 
   button {
+    margin-left: 1rem;
     border: solid 1px;
     background: white;
     transition: box-shadow 0.2s ease-out;

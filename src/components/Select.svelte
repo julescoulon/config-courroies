@@ -1,28 +1,41 @@
 <script>
   export let data, selection, index;
+  // let currentDepth = 0;
+  // let array = [];
+  // // console.log(index, selection[index]);
+  // function findData(data) {
+  //   // console.log(index, currentDepth);
+  //   if (index == currentDepth) {
+  //     array.push(data);
+  //     // console.log(index, currentDepth, data);
+  //   } else {
+  //     //Creuse un niveau
+  //     currentDepth++;
 
-  let currentDepth = 0;
-  let array = [];
-  // console.log(data);
-  function findData(data) {
-    // console.log(index, currentDepth);
-    if (index == currentDepth) {
-      array.push(data);
-    } else {
-      //Creuse un niveau
-      currentDepth++;
-      //Rappelle la fonction si possibilté de creuser
-      data.forEach((element) => {
-        findData(element.content);
-      });
-      //Réinitialise si objet de même niveau encore présent
-      if (index == currentDepth) {
-        currentDepth--;
-      }
+  //     //Rappelle la fonction si possibilté de creuser
+  //     data.forEach((element) => {
+  //       findData(element.content);
+  //     });
+  //     //Réinitialise si objet de même niveau encore présent
+  //     if (index == currentDepth) {
+  //       currentDepth--;
+  //     }
+  //   }
+  // }
+  // findData(data);
+  // array = array.flat();
+  let depth = 0;
+  function functionTest(data, depth) {
+    if (depth < index) {
+      depth = depth++;
+      data = functionTest(data, depth);
+      console.log(depth);
     }
+
+    return data;
   }
-  findData(data);
-  array = array.flat();
+  let array = functionTest(data, depth);
+  // console.log(index, currentDepth, data);
 
   function setSelection() {
     if (index < selection.length - 1) {
@@ -65,13 +78,6 @@
 {/if}
 
 <style>
-  select,
-  option {
-    padding: 1rem;
-    font-size: inherit;
-    margin-bottom: 1rem;
-  }
-
   .radio-list {
     display: flex;
     flex-wrap: wrap;

@@ -1,5 +1,5 @@
 <script>
-  export let data, selection, objectDepth, explications, request;
+  export let data, selection, objectDepth, explications;
   import Help from "./Help.svelte";
   import Select from "./Select.svelte";
 </script>
@@ -7,17 +7,23 @@
 <form>
   {#each Array(objectDepth) as _, index}
     <section>
-      <h3>{explications[index].section_title}</h3>
+      {#if explications[index]}
+        <h3>{explications[index].section_title}</h3>
+      {/if}
       {#if index == 0 || selection[index - 1]}
         <Select bind:selection {data} {index} />
-        {#if explications[index].questions}
+      {/if}
+
+      <!-- {#if index == 0 || selection[index - 1]}
+        <Select bind:selection {data} {index} {objectDepth} />
+        {#if explications[index].questions.length > 0}
           <Help {index} {explications} {request} />
         {/if}
       {:else}
         <p>
           Veuillez remplir la section précendente pour remplir cette section.
         </p>
-      {/if}
+      {/if} -->
     </section>
   {/each}
 </form>
