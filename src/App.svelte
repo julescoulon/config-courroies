@@ -11,7 +11,9 @@
   const products = [
     { name: "Courroies", value: "courroies", depth: 3 },
     { name: "Poulies trapézoïdales", value: "poulies", depth: 4 },
-    { name: "Bavettes caoutchouc", value: "bavettes", depth: 4 },
+    { name: "Bavettes caoutchouc", value: "bavettes", depth: 3 },
+    { name: "Moyeux amovibles", value: "moyeux", depth: 3 },
+
     // { name: "Test", value: "test", depth: 5 },
   ];
 
@@ -22,13 +24,21 @@
   let displayData = undefined;
   let explications = undefined;
 
+  function initialfetchAll() {
+    localStorage.clear();
+
+    products.forEach((element) => {
+      fetchData(element.value, "index");
+      fetchData(element.value, "explications");
+    });
+  }
+  initialfetchAll();
+
   function fetchProduct() {
     console.clear();
     selection = selection.fill(null);
-    fetchData(request);
-    fetchData(`${request}_explications`);
-    displayData = filterData(getData(request), selection);
-    explications = getData(`${request}_explications`);
+    displayData = filterData(getData(request, "index"), selection);
+    explications = getData(request, "explications");
     objectDepth = products.find((element) => element.value == request).depth;
   }
 
@@ -39,7 +49,7 @@
 
   console.log(displayData);
   function newSelection() {
-    displayData = filterData(getData(request), selection);
+    displayData = filterData(getData(request, "index"), selection);
   }
 </script>
 
@@ -54,4 +64,3 @@
     {/await}
   {/if}
 </div>
-

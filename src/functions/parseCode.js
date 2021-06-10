@@ -27,6 +27,10 @@ function parseCode(selection, objectDepth, data, request) {
         code = bavettes(code);
         break;
       }
+      case "moyeux": {
+        code = moyeux(code);
+        break;
+      }
     }
     return code.join("");
   }
@@ -90,16 +94,33 @@ function bavettes(code) {
     return number;
   }
 
-  function tofixedUnits(value, units) {
-    let length = value.length;
-    for (let i = 0; i < units - length; i++) {
-      value = "0" + value;
-    }
-    console.log(value);
-    return value;
-  }
-
   res.push("BA", type, duretee, "-", epaisseur, "X", largeur);
 
   return res;
+}
+
+function moyeux(code) {
+  let res = [];
+  let [type, alesage] = [code[0], code[2]];
+  type = type.split(" - ");
+  let [international, veco] = [type[0], type[1]];
+  international = international.replace(".", "");
+  let matiere = "F";
+  if (alesage.includes("*")) {
+    matiere = "A";
+  }
+  alesage = alesage.replaceAll("*", "");
+  alesage = tofixedUnits(alesage, 3);
+  international = tofixedUnits(international, 4, 1);
+  res.push("MO", international, veco ? "/" : "", veco, matiere, alesage);
+  return res;
+}
+
+function tofixedUnits(value, units, position = 0) {
+  let length = value.length;
+  for (let i = 0; i < units - length; i++) {
+    value = !!position ? value + "0" : "0" + value;
+  }
+  console.log(value);
+  return value;
 }

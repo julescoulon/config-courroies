@@ -21,7 +21,7 @@
         {
           "title": "Déterminer la section",
           "image_url": "courroies-section.jpg",
-          "html": "<table><thead><tr><th>Section</th><th>l (en mm)</th><th>h (en mm)</th><th>p (en mm)</th></tr><thead><tbody><tr><td>Z</td><td>10</td><td>6</td><td>8.5</td></tr><tr><td>A</td><td>13</td><td>8</td><td>11</td></tr><tr><td>B</td><td>17</td><td>11</td><td>14</td></tr><tr><td>C</td><td>22</td><td>14</td><td>19</td></tr><tr><td>D</td><td>32</td><td>19</td><td>27</td></tr><tr><td>SPZ</td><td>9.7</td><td>8</td><td>8.5</td></tr><tr><td>SPA</td><td>12.7</td><td>10</td><td>11</td></tr><tr><td>SPB</td><td>16.3</td><td>13</td><td>14</td></tr><tr><td>SPC</td><td>22</td><td>18</td><td>19</td></tr></tbody></table>"
+          "answer": "<table><thead><tr><th>Section</th><th>l (en mm)</th><th>h (en mm)</th><th>p (en mm)</th></tr><thead><tbody><tr><td>Z</td><td>10</td><td>6</td><td>8.5</td></tr><tr><td>A</td><td>13</td><td>8</td><td>11</td></tr><tr><td>B</td><td>17</td><td>11</td><td>14</td></tr><tr><td>C</td><td>22</td><td>14</td><td>19</td></tr><tr><td>D</td><td>32</td><td>19</td><td>27</td></tr><tr><td>SPZ</td><td>9.7</td><td>8</td><td>8.5</td></tr><tr><td>SPA</td><td>12.7</td><td>10</td><td>11</td></tr><tr><td>SPB</td><td>16.3</td><td>13</td><td>14</td></tr><tr><td>SPC</td><td>22</td><td>18</td><td>19</td></tr></tbody></table>"
         }
       ]
     },

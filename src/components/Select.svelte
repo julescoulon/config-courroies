@@ -48,7 +48,7 @@
     </select>
   {:else}
     <div class="radio-list">
-      {#each array as item}
+      {#each array as item, i}
         <label>
           <input
             type="radio"

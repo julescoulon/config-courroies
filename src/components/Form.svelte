@@ -2,8 +2,6 @@
   export let data, selection, objectDepth, explications, request;
   import Help from "./Help.svelte";
   import Select from "./Select.svelte";
-
-  console.log(selection);
 </script>
 
 <form>

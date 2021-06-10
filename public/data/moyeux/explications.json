@@ -1,0 +1,26 @@
+{
+  "data": [
+    {
+      "section_title": "Type",
+      "questions": [
+        {
+          "title": "Vécobloc / Taperlock",
+          "answer": "Vécobloc : <br> Taperlock : "
+        }
+      ]
+    },
+    {
+      "section_title": "Unité",
+      "questions": []
+    },
+    {
+      "section_title": "Alésage",
+      "questions": [
+        {
+          "title": "Notes",
+          "answer": "* Hauteur de clavette doit être diminuée de 1mm + moyeu en acier. <br> ** Moyeu en acier. <br> *** Utilisation de clavette mince (norme E 22.175) + moyeu en acier. <br> **** ???"
+        }
+      ]
+    }
+  ]
+}

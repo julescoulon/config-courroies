@@ -18,10 +18,7 @@
         <div>
           <div class="title">{question.title}</div>
           {#if question.answer}
-            <div>{question.answer}</div>
-          {/if}
-          {#if question.html}
-            <div>{@html question.html}</div>
+            <div>{@html question.answer}</div>
           {/if}
         </div>
         {#if question.image_url}
