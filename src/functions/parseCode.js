@@ -21,21 +21,27 @@ function parseCode(selection, objectDepth, data, request) {
     switch (request) {
       case "courroies": {
         code = courroies(code);
+        code = code.join("");
         break;
       }
       case "bavettes": {
         code = bavettes(code);
+        code = code.join("");
+
         break;
       }
       case "moyeux": {
         code = moyeux(code);
+        code = code.join("");
+
         break;
       }
+      default: {
+        code = code.join(", ");
+      }
     }
-    return code.join("");
   }
-
-  return code.join(", ");
+  return code;
 }
 
 export { parseCode };
@@ -82,6 +88,7 @@ function courroies(code) {
 
 function bavettes(code) {
   let res = [];
+  console.log(code);
   let [type, duretee, epaisseur, largeur] = [
     getValue(`${code[0]}`),
     getValue(`${code[1]}`),

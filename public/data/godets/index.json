@@ -7,234 +7,539 @@
     {
       "name": "Emboutis",
       "content": [
-        { "name": [85, 80, 58], "category": "JET", "code": "JET 08-080" },
-        { "name": [105, 92, 70], "category": "JET", "code": "JET 10-090" },
-        { "name": [125, 103, 80], "category": "JET", "code": "JET 12-100" },
-        { "name": [285, 169, 132], "category": "JET", "code": "JET 28-160" },
-        { "name": [640, 253, 190], "category": "JET", "code": "JET 63-250" },
-        { "name": [425, 188, 140], "category": "JET", "code": "JET 42-180" },
-        { "name": [359, 188, 147], "category": "JET", "code": "JET 35-180" },
-        { "name": [570, 220, 164], "category": "JET", "code": "JET 56-215" },
-        { "name": [209, 188, 147], "category": "JET", "code": "JET 20-180" },
-        { "name": [570, 253, 190], "category": "JET", "code": "JET 56-250" },
-        { "name": [356, 176, 128], "category": "JET", "code": "JET 35-160" },
-        { "name": [245, 169, 132], "category": "JET", "code": "JET 24-160" },
-        { "name": [380, 253, 190], "category": "JET", "code": "JET 37-250" },
-        { "name": [454, 220, 164], "category": "JET", "code": "JET 44-215B" },
-        { "name": [360, 220, 164], "category": "JET", "code": "JET 35-215" },
-        { "name": [188, 147, 112], "category": "JET", "code": "JET 18-140" },
-        { "name": [227, 142, 110], "category": "JET", "code": "JET 22-140" },
-        { "name": [340, 253, 190], "category": "JET", "code": "JET 33-250" },
-        { "name": [340, 220, 162], "category": "JET", "code": "JET 33-215A" },
-        { "name": [285, 216, 162], "category": "JET", "code": "JET 28-215" },
-        { "name": [360, 253, 190], "category": "JET", "code": "JET 35-250" },
-        { "name": [309, 188, 147], "category": "JET", "code": "JET 30-180" },
-        { "name": [510, 220, 164], "category": "JET", "code": "JET 50-215B" },
-        { "name": [205, 169, 132], "category": "JET", "code": "JET 20-160" },
-        { "name": [480, 253, 190], "category": "JET", "code": "JET 47-250" },
-        { "name": [640, 220, 164], "category": "JET", "code": "JET 63-215" },
-        { "name": [146, 120, 90], "category": "JET", "code": "JET 14-120" },
-        { "name": [510, 220, 164], "category": "JET", "code": "JET 50-215A" },
-        { "name": [340, 220, 162], "category": "JET", "code": "JET 33-215B" },
-        { "name": [312, 216, 162], "category": "JET", "code": "JET 30-215" },
-        { "name": [265, 169, 132], "category": "JET", "code": "JET 26-160" },
-        { "name": [379, 188, 147], "category": "JET", "code": "JET 37-180" },
-        { "name": [540, 253, 190], "category": "JET", "code": "JET 53-250" },
-        { "name": [450, 253, 190], "category": "JET", "code": "JET 44-250" },
-        { "name": [380, 220, 164], "category": "JET", "code": "JET 37-215" },
-        { "name": [235, 169, 132], "category": "JET", "code": "JET 23-160" },
-        { "name": [154, 140, 108], "category": "JET", "code": "JET 15-140" },
-        { "name": [249, 188, 147], "category": "JET", "code": "JET 24-180" },
-        { "name": [138, 125, 90], "category": "JET", "code": "JET 13-120" },
-        { "name": [237, 142, 110], "category": "JET", "code": "JET 23-140" },
-        { "name": [454, 220, 164], "category": "JET", "code": "JET 44-215A" },
-        { "name": [339, 188, 147], "category": "JET", "code": "JET 33-180" },
-        { "name": [375, 176, 128], "category": "JET", "code": "JET 37-160" },
-        { "name": [305, 169, 132], "category": "JET", "code": "JET 30-160" },
-        { "name": [540, 220, 164], "category": "JET", "code": "JET 53-215" },
-        { "name": [289, 188, 147], "category": "JET", "code": "JET 28-180" },
-        { "name": [255, 216, 162], "category": "JET", "code": "JET 25-215" },
-        { "name": [480, 220, 164], "category": "JET", "code": "JET 47-215" },
-        { "name": [430, 253, 190], "category": "JET", "code": "JET 42-250" },
-        { "name": [269, 188, 147], "category": "JET", "code": "JET 26-180" },
-        { "name": [335, 169, 132], "category": "JET", "code": "JET 33-160" },
-        { "name": [207, 142, 110], "category": "JET", "code": "JET 20-140" },
         {
-          "name": [125, 104, 78],
-          "category": "EURO JET",
-          "code": "EURO JET 12-100"
+          "name": "A = 80, B = 80, C = 80",
+          "category": "COLUMBUS",
+          "code": "COL 08-080",
+          "content": ["1.0"]
         },
         {
-          "name": [200, 136, 97],
-          "category": "EURO JET",
-          "code": "EURO JET 20-140"
+          "name": "A = 100, B = 90, C = 92",
+          "category": "COLUMBUS",
+          "code": "COL 10-090",
+          "content": ["1.0"]
         },
         {
-          "name": [185, 140, 92],
-          "category": "EURO JET",
-          "code": "EURO JET 18-140"
+          "name": "A = 120, B = 100, C = 105",
+          "category": "COLUMBUS",
+          "code": "COL 12-100",
+          "content": ["1.0"]
         },
         {
-          "name": [308, 187, 120],
-          "category": "EURO JET",
-          "code": "EURO JET 30-180"
+          "name": "A = 140, B = 112, C = 117",
+          "category": "COLUMBUS",
+          "code": "COL 14-115",
+          "content": ["1.0"]
         },
         {
-          "name": [338, 215, 130],
-          "category": "EURO JET",
-          "code": "EURO JET 33-215"
+          "name": "A = 160, B = 124, C = 128",
+          "category": "COLUMBUS",
+          "code": "COL 16-125",
+          "content": ["1.5"]
         },
         {
-          "name": [378, 215, 130],
-          "category": "EURO JET",
-          "code": "EURO JET 37-215"
+          "name": "A = 180, B = 130, C = 135",
+          "category": "COLUMBUS",
+          "code": "COL 18-130",
+          "content": ["1.5"]
         },
         {
-          "name": [448, 215, 130],
-          "category": "EURO JET",
-          "code": "EURO JET 44-215"
+          "name": "A = 200, B = 138, C = 145",
+          "category": "COLUMBUS",
+          "code": "COL 20-140",
+          "content": ["1.5"]
         },
         {
-          "name": [258, 165, 110],
-          "category": "EURO JET",
-          "code": "EURO JET 25-165"
+          "name": "A = 225, B = 144, C = 153",
+          "category": "COLUMBUS",
+          "code": "COL 22-145",
+          "content": ["1.5"]
         },
         {
-          "name": [238, 165, 110],
-          "category": "EURO JET",
-          "code": "EURO JET 23-165"
+          "name": "A = 250, B = 150, C = 160",
+          "category": "COLUMBUS",
+          "code": "COL 25-150",
+          "content": ["1.5"]
         },
         {
-          "name": [165, 130, 87],
-          "category": "EURO JET",
-          "code": "EURO JET 16-130"
+          "name": "A = 275, B = 155, C = 165",
+          "category": "COLUMBUS",
+          "code": "COL 27-155",
+          "content": ["1.5"]
         },
         {
-          "name": [288, 165, 110],
-          "category": "EURO JET",
-          "code": "EURO JET 28-165"
+          "name": "A = 300, B = 160, C = 170",
+          "category": "COLUMBUS",
+          "code": "COL 30-160",
+          "content": ["1.5"]
         },
         {
-          "name": [308, 215, 140],
-          "category": "EURO JET",
-          "code": "EURO JET 30-215"
+          "name": "A = 325, B = 172, C = 180",
+          "category": "COLUMBUS",
+          "code": "COL 32-170",
+          "content": ["1.5"]
         },
         {
-          "name": [135, 115, 81],
-          "category": "EURO JET",
-          "code": "EURO JET 13-120"
+          "name": "A = 350, B = 185, C = 190",
+          "category": "COLUMBUS",
+          "code": "COL 35-185",
+          "content": ["1.5"]
         },
         {
-          "name": [134, 115, 67],
+          "name": "A = 400, B = 200, C = 207",
+          "category": "COLUMBUS",
+          "code": "COL 40-200",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 125, B = 104, C = 78",
+          "category": "EURO JET",
+          "code": "EURO JET 12-100",
+          "content": ["1.2"]
+        },
+        {
+          "name": "A = 135, B = 115, C = 81",
+          "category": "EURO JET",
+          "code": "EURO JET 13-120",
+          "content": ["1.2"]
+        },
+        {
+          "name": "A = 165, B = 130, C = 87",
+          "category": "EURO JET",
+          "code": "EURO JET 16-130",
+          "content": ["1.5"]
+        },
+        {
+          "name": "A = 185, B = 140, C = 92",
+          "category": "EURO JET",
+          "code": "EURO JET 18-140",
+          "content": ["1.5"]
+        },
+        {
+          "name": "A = 200, B = 136, C = 97",
+          "category": "EURO JET",
+          "code": "EURO JET 20-140",
+          "content": ["1.5"]
+        },
+        {
+          "name": "A = 238, B = 165, C = 110",
+          "category": "EURO JET",
+          "code": "EURO JET 23-165",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 258, B = 165, C = 110",
+          "category": "EURO JET",
+          "code": "EURO JET 25-165",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 288, B = 165, C = 110",
+          "category": "EURO JET",
+          "code": "EURO JET 28-165",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 308, B = 187, C = 120",
+          "category": "EURO JET",
+          "code": "EURO JET 30-180",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 308, B = 215, C = 140",
+          "category": "EURO JET",
+          "code": "EURO JET 30-215",
+          "content": ["2.0", "2.5", "3.0"]
+        },
+        {
+          "name": "A = 338, B = 215, C = 130",
+          "category": "EURO JET",
+          "code": "EURO JET 33-215",
+          "content": ["2.0", "2.5", "3.0"]
+        },
+        {
+          "name": "A = 378, B = 215, C = 130",
+          "category": "EURO JET",
+          "code": "EURO JET 37-215",
+          "content": ["2.0", "2.5", "3.0"]
+        },
+        {
+          "name": "A = 448, B = 215, C = 130",
+          "category": "EURO JET",
+          "code": "EURO JET 44-215",
+          "content": ["2.0", "2.5", "3.0"]
+        },
+        {
+          "name": "A = 85, B = 80, C = 58",
+          "category": "JET",
+          "code": "JET 08-080",
+          "content": ["1.0"]
+        },
+        {
+          "name": "A = 105, B = 92, C = 70",
+          "category": "JET",
+          "code": "JET 10-090",
+          "content": ["1.0"]
+        },
+        {
+          "name": "A = 125, B = 103, C = 80",
+          "category": "JET",
+          "code": "JET 12-100",
+          "content": ["1.2"]
+        },
+        {
+          "name": "A = 138, B = 125, C = 90",
+          "category": "JET",
+          "code": "JET 13-120",
+          "content": ["1.5"]
+        },
+        {
+          "name": "A = 146, B = 120, C = 90",
+          "category": "JET",
+          "code": "JET 14-120",
+          "content": ["1.5"]
+        },
+        {
+          "name": "A = 154, B = 140, C = 108",
+          "category": "JET",
+          "code": "JET 15-140",
+          "content": ["1.5"]
+        },
+        {
+          "name": "A = 188, B = 147, C = 112",
+          "category": "JET",
+          "code": "JET 18-140",
+          "content": ["1.5"]
+        },
+        {
+          "name": "A = 207, B = 142, C = 110",
+          "category": "JET",
+          "code": "JET 20-140",
+          "content": ["1.5"]
+        },
+        {
+          "name": "A = 205, B = 169, C = 132",
+          "category": "JET",
+          "code": "JET 20-160",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 209, B = 188, C = 147",
+          "category": "JET",
+          "code": "JET 20-180",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 227, B = 142, C = 110",
+          "category": "JET",
+          "code": "JET 22-140",
+          "content": ["1.5"]
+        },
+        {
+          "name": "A = 237, B = 142, C = 110",
+          "category": "JET",
+          "code": "JET 23-140",
+          "content": ["1.5"]
+        },
+        {
+          "name": "A = 235, B = 169, C = 132",
+          "category": "JET",
+          "code": "JET 23-160",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 245, B = 169, C = 132",
+          "category": "JET",
+          "code": "JET 24-160",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 249, B = 188, C = 147",
+          "category": "JET",
+          "code": "JET 24-180",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 255, B = 216, C = 162",
+          "category": "JET",
+          "code": "JET 25-215",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 265, B = 169, C = 132",
+          "category": "JET",
+          "code": "JET 26-160",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 269, B = 188, C = 147",
+          "category": "JET",
+          "code": "JET 26-180",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 285, B = 169, C = 132",
+          "category": "JET",
+          "code": "JET 28-160",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 289, B = 188, C = 147",
+          "category": "JET",
+          "code": "JET 28-180",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 285, B = 216, C = 162",
+          "category": "JET",
+          "code": "JET 28-215",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 305, B = 169, C = 132",
+          "category": "JET",
+          "code": "JET 30-160",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 309, B = 188, C = 147",
+          "category": "JET",
+          "code": "JET 30-180",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 312, B = 216, C = 162",
+          "category": "JET",
+          "code": "JET 30-215",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 335, B = 169, C = 132",
+          "category": "JET",
+          "code": "JET 33-160",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 339, B = 188, C = 147",
+          "category": "JET",
+          "code": "JET 33-180",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 340, B = 220, C = 162",
+          "category": "JET",
+          "code": "JET 33-215A",
+          "content": ["2.5"]
+        },
+        {
+          "name": "A = 340, B = 220, C = 162",
+          "category": "JET",
+          "code": "JET 33-215B",
+          "content": ["2.5"]
+        },
+        {
+          "name": "A = 340, B = 253, C = 190",
+          "category": "JET",
+          "code": "JET 33-250",
+          "content": ["3.0", "4.0"]
+        },
+        {
+          "name": "A = 356, B = 176, C = 128",
+          "category": "JET",
+          "code": "JET 35-160",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 359, B = 188, C = 147",
+          "category": "JET",
+          "code": "JET 35-180",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 360, B = 220, C = 164",
+          "category": "JET",
+          "code": "JET 35-215",
+          "content": ["2.5"]
+        },
+        {
+          "name": "A = 360, B = 253, C = 190",
+          "category": "JET",
+          "code": "JET 35-250",
+          "content": ["3.0", "4.0"]
+        },
+        {
+          "name": "A = 375, B = 176, C = 128",
+          "category": "JET",
+          "code": "JET 37-160",
+          "content": ["2.0"]
+        },
+        {
+          "name": "A = 379, B = 188, C = 147",
+          "category": "JET",
+          "code": "JET 37-180",
+          "content": ["2.5"]
+        },
+        {
+          "name": "A = 380, B = 220, C = 164",
+          "category": "JET",
+          "code": "JET 37-215",
+          "content": ["2.5"]
+        },
+        {
+          "name": "A = 380, B = 253, C = 190",
+          "category": "JET",
+          "code": "JET 37-250",
+          "content": ["3.0", "4.0"]
+        },
+        {
+          "name": "A = 425, B = 188, C = 140",
+          "category": "JET",
+          "code": "JET 42-180",
+          "content": ["2.5"]
+        },
+        {
+          "name": "A = 430, B = 253, C = 190",
+          "category": "JET",
+          "code": "JET 42-250",
+          "content": ["3.0", "4.0"]
+        },
+        {
+          "name": "A = 454, B = 220, C = 164",
+          "category": "JET",
+          "code": "JET 44-215A",
+          "content": ["2.5"]
+        },
+        {
+          "name": "A = 454, B = 220, C = 164",
+          "category": "JET",
+          "code": "JET 44-215B",
+          "content": ["2.5"]
+        },
+        {
+          "name": "A = 450, B = 253, C = 190",
+          "category": "JET",
+          "code": "JET 44-250",
+          "content": ["3.0", "4.0"]
+        },
+        {
+          "name": "A = 480, B = 220, C = 164",
+          "category": "JET",
+          "code": "JET 47-215",
+          "content": ["2.5"]
+        },
+        {
+          "name": "A = 480, B = 253, C = 190",
+          "category": "JET",
+          "code": "JET 47-250",
+          "content": ["3.0", "4.0"]
+        },
+        {
+          "name": "A = 510, B = 220, C = 164",
+          "category": "JET",
+          "code": "JET 50-215A",
+          "content": ["2.5"]
+        },
+        {
+          "name": "A = 510, B = 220, C = 164",
+          "category": "JET",
+          "code": "JET 50-215B",
+          "content": ["2.5"]
+        },
+        {
+          "name": "A = 540, B = 220, C = 164",
+          "category": "JET",
+          "code": "JET 53-215",
+          "content": ["2.5", "3.0"]
+        },
+        {
+          "name": "A = 540, B = 253, C = 190",
+          "category": "JET",
+          "code": "JET 53-250",
+          "content": ["3.0", "4.0"]
+        },
+        {
+          "name": "A = 570, B = 220, C = 164",
+          "category": "JET",
+          "code": "JET 56-215",
+          "content": ["2.5", "3.0"]
+        },
+        {
+          "name": "A = 570, B = 253, C = 190",
+          "category": "JET",
+          "code": "JET 56-250",
+          "content": ["3.0", "4.0"]
+        },
+        {
+          "name": "A = 640, B = 220, C = 164",
+          "category": "JET",
+          "code": "JET 63-215",
+          "content": ["2.5", "3.0"]
+        },
+        {
+          "name": "A = 640, B = 253, C = 190",
+          "category": "JET",
+          "code": "JET 63-250",
+          "content": ["3.0", "4.0"]
+        },
+        {
+          "name": "A = 134, B = 115, C = 67",
           "category": "JEFT-LIFT",
-          "code": "JET-LIFT 13-120"
+          "code": "JET-LIFT 13-120",
+          "content": ["1.5"]
         },
         {
-          "name": [238, 164, 102],
+          "name": "A = 185, B = 139, C = 90",
           "category": "JEFT-LIFT",
-          "code": "JET-LIFT 23-165"
+          "code": "JET-LIFT 18-140",
+          "content": ["1.5"]
         },
         {
-          "name": [185, 139, 90],
+          "name": "A = 238, B = 164, C = 102",
           "category": "JEFT-LIFT",
-          "code": "JET-LIFT 18-140"
+          "code": "JET-LIFT 23-165",
+          "content": ["2.0"]
         },
         {
-          "name": [290, 167, 108],
+          "name": "A = 290, B = 167, C = 108",
           "category": "JEFT-LIFT",
-          "code": "JET-LIFT 28-165"
+          "code": "JET-LIFT 28-165",
+          "content": ["2.0"]
         },
         {
-          "name": [141, 105, 121],
+          "name": "A = 141, B = 105, C = 121",
           "category": "JET-R",
-          "code": "JET-R 5×4 14/100"
+          "code": "JET-R 5×4 14/100",
+          "content": ["1.5"]
         },
         {
-          "name": [282, 140, 155],
+          "name": "A = 151, B = 139, C = 155",
           "category": "JET-R",
-          "code": "JET-R 10×5 28/135"
+          "code": "JET-R 6×5 15/135",
+          "content": ["1.5"]
         },
         {
-          "name": [231, 139, 155],
+          "name": "A = 181, B = 105, C = 121",
           "category": "JET-R",
-          "code": "JET-R 9×5 23/135"
+          "code": "JET-R 7×4 18/100",
+          "content": ["1.5"]
         },
         {
-          "name": [151, 139, 155],
+          "name": "A = 181, B = 139, C = 155",
           "category": "JET-R",
-          "code": "JET-R 6×5 15/135"
+          "code": "JET-R 7×5 18/135",
+          "content": ["1.5"]
         },
         {
-          "name": [181, 139, 155],
+          "name": "A = 231, B = 139, C = 155",
           "category": "JET-R",
-          "code": "JET-R 7×5 18/135"
+          "code": "JET-R 9×5 23/135",
+          "content": ["1.5"]
         },
         {
-          "name": [181, 105, 121],
+          "name": "A = 282, B = 140, C = 155",
           "category": "JET-R",
-          "code": "JET-R 7×4 18/100"
-        },
-        { "name": [80, 80, 80], "category": "COLUMBUS", "code": "COL 08-080" },
-        {
-          "name": [400, 200, 207],
-          "category": "COLUMBUS",
-          "code": "COL 40-200"
-        },
-        {
-          "name": [250, 150, 160],
-          "category": "COLUMBUS",
-          "code": "COL 25-150"
-        },
-        {
-          "name": [325, 172, 180],
-          "category": "COLUMBUS",
-          "code": "COL 32-170"
-        },
-        {
-          "name": [300, 160, 170],
-          "category": "COLUMBUS",
-          "code": "COL 30-160"
-        },
-        { "name": [100, 90, 92], "category": "COLUMBUS", "code": "COL 10-090" },
-        {
-          "name": [350, 185, 190],
-          "category": "COLUMBUS",
-          "code": "COL 35-185"
-        },
-        {
-          "name": [180, 130, 135],
-          "category": "COLUMBUS",
-          "code": "COL 18-130"
-        },
-        {
-          "name": [275, 155, 165],
-          "category": "COLUMBUS",
-          "code": "COL 27-155"
-        },
-        {
-          "name": [140, 112, 117],
-          "category": "COLUMBUS",
-          "code": "COL 14-115"
-        },
-        {
-          "name": [225, 144, 153],
-          "category": "COLUMBUS",
-          "code": "COL 22-145"
-        },
-        {
-          "name": [160, 124, 128],
-          "category": "COLUMBUS",
-          "code": "COL 16-125"
-        },
-        {
-          "name": [200, 138, 145],
-          "category": "COLUMBUS",
-          "code": "COL 20-140"
-        },
-        {
-          "name": [120, 100, 105],
-          "category": "COLUMBUS",
-          "code": "COL 12-100"
+          "code": "JET-R 10×5 28/135",
+          "content": ["1.5"]
         }
       ]
     },
@@ -242,568 +547,568 @@
       "name": "Polymères",
       "content": [
         {
-          "name": [110, 96, 72],
-          "category": "JET",
-          "code": "JET 10-090",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [142, 126, 84],
-          "category": "JET",
-          "code": "JET 13-120",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [156, 157, 113],
-          "category": "JET",
-          "code": "JET 15-140",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [189, 150, 112],
-          "category": "JET",
-          "code": "JET 18-140",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [207, 157, 113],
-          "category": "JET",
-          "code": "JET 20-140",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [228, 152, 112],
-          "category": "JET",
-          "code": "JET 22-140",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [252, 158, 125],
-          "category": "JET",
-          "code": "JET 23-145",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [214, 180, 129],
-          "category": "JET",
-          "code": "JET 20-170",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [243, 175, 133],
-          "category": "JET",
-          "code": "JET 23-170",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [293, 175, 133],
-          "category": "JET",
-          "code": "JET 28-170",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [320, 202, 157],
-          "category": "JET",
-          "code": "JET 30-190",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [320, 228, 168],
-          "category": "JET",
-          "code": "JET 30-215",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [350, 228, 168],
-          "category": "JET",
-          "code": "JET 33-215",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [370, 228, 168],
-          "category": "JET",
-          "code": "JET 35-215",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [390, 228, 168],
-          "category": "JET",
-          "code": "JET 37-215",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [420, 228, 168],
-          "category": "JET",
-          "code": "JET 40-215",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [460, 228, 168],
-          "category": "JET",
-          "code": "JET 44-215",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [520, 228, 168],
-          "category": "JET",
-          "code": "JET 50-215",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [110, 97, 69],
-          "category": "EURO JET",
-          "code": "EURO JET 10-090",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [145, 122, 83],
-          "category": "EURO JET",
-          "code": "EURO JET 13-120",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [160, 131, 85],
-          "category": "EURO JET",
-          "code": "EURO JET 15-120",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [188, 149, 93],
-          "category": "EURO JET",
-          "code": "EURO JET 18-140",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [207, 176, 115],
-          "category": "EURO JET",
-          "code": "EURO JET 20-165",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [242, 172, 117],
-          "category": "EURO JET",
-          "code": "EURO JET 23-165",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [292, 170, 116],
-          "category": "EURO JET",
-          "code": "EURO JET 28-165",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [318, 186, 135],
-          "category": "EURO JET",
-          "code": "EURO JET 30-180",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [339, 222, 145],
-          "category": "EURO JET",
-          "code": "EURO JET 33-215",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [383, 219, 142],
-          "category": "EURO JET",
-          "code": "EURO JET 37-215",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [455, 223, 143],
-          "category": "EURO JET",
-          "code": "EURO JET 44-215",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [114, 90, 80],
-          "category": "JET CC",
-          "code": "JET CC 4x3 10/090",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [138, 115, 100],
-          "category": "JET CC",
-          "code": "JET CC 5x4 13/100",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [164, 115, 100],
-          "category": "JET CC",
-          "code": "JET CC 6x4 16/100",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [186, 115, 100],
-          "category": "JET CC",
-          "code": "JET CC 7x4 18/100",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [192, 140, 130],
-          "category": "JET CC",
-          "code": "JET CC 7x5 18/140",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [216, 140, 130],
-          "category": "JET CC",
-          "code": "JET CC 8x5 20/140",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [242, 140, 130],
-          "category": "JET CC",
-          "code": "JET CC 9x5 23/140",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [268, 140, 130],
-          "category": "JET CC",
-          "code": "JET CC 10x5 26/140",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [215, 170, 155],
-          "category": "JET CC",
-          "code": "JET CC 8x6 20/170",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [242, 170, 155],
-          "category": "JET CC",
-          "code": "JET CC 9x6 23/170",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [266, 170, 155],
-          "category": "JET CC",
-          "code": "JET CC 10x6 26/170",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [292, 170, 155],
-          "category": "JET CC",
-          "code": "JET CC 11x6 28/170",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [302, 200, 175],
-          "category": "JET CC",
-          "code": "JET CC 11x7 30/200",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [285, 200, 205],
-          "category": "JET CC",
-          "code": "JET CC 11x7 D 30/200",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [326, 200, 175],
-          "category": "JET CC",
-          "code": "JET CC 12x7 32/200",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [340, 200, 205],
-          "category": "JET CC",
-          "code": "JET CC 12x7 D 32/200",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [378, 200, 175],
-          "category": "JET CC",
-          "code": "JET CC 14x7 37/200",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [532, 200, 178],
-          "category": "JET CC",
-          "code": "JET CC 20x7 52/200",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [302, 230, 205],
-          "category": "JET CC",
-          "code": "JET CC 11x8 30/230",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [320, 230, 210],
-          "category": "JET CC",
-          "code": "JET CC 12x8 32/230",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [380, 230, 205],
-          "category": "JET CC",
-          "code": "JET CC 14x8 37/230",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [430, 230, 205],
-          "category": "JET CC",
-          "code": "JET CC 16x8 42/230",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [482, 230, 205],
-          "category": "JET CC",
-          "code": "JET CC 18x8 47/230",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [532, 230, 205],
-          "category": "JET CC",
-          "code": "JET CC 20x8 52/230",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [582, 230, 205],
-          "category": "JET CC",
-          "code": "JET CC 22x8 57/230",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [114, 90, 80],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 4x3 10/090",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [138, 115, 75],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 5x4 13/100",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [164, 115, 75],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 6x4 16/100",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [186, 115, 75],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 7x4 18/100",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [192, 140, 100],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 7x5 18/140",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [216, 140, 100],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 8x5 20/140",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [242, 140, 100],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 9x5 23/140",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [268, 140, 100],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 10x5 26/140",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [215, 170, 120],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 8x6 20/170",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [242, 170, 120],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 9x6 23/170",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [266, 170, 120],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 10x6 26/170",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [292, 170, 120],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 11x6 28/170",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [302, 200, 145],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 11x7 30/200",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [285, 200, 170],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 11x7 D 30/200",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [326, 200, 145],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 12x7 32/200",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [340, 200, 170],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 12x7 D 32/200",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [378, 200, 145],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 14x7 37/200",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [532, 200, 148],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 20x7 52/200",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [302, 230, 170],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 11x8 30/230",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [328, 230, 170],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 12x8 32/230",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [380, 230, 170],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 14x8 37/230",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [430, 230, 170],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 16x8 42/230",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [482, 230, 170],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 18x8 47/230",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [532, 230, 170],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 20x8 52/230",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [582, 230, 170],
-          "category": "JET CC Low Profile",
-          "code": "JET CC 22x8 57/230",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [519, 225, 211],
-          "category": "MaxiJET",
-          "code": "MaxiJET 20x8 52/230",
-          "content": ["HDPE", "PA6", "PU"]
-        },
-        {
-          "name": [80, 80, 80],
+          "name": "A = 80, B = 80, C = 80",
           "category": "COLUMBUS",
           "code": "COL 08-080",
           "content": ["HDPE", "PA6"]
         },
         {
-          "name": [100, 92, 92],
+          "name": "A = 100, B = 92, C = 92",
           "category": "COLUMBUS",
           "code": "COL 10-090",
           "content": ["HDPE", "PA6"]
         },
         {
-          "name": [120, 102, 105],
+          "name": "A = 110, B = 96, C = 72",
+          "category": "JET",
+          "code": "JET 10-090",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 110, B = 97, C = 69",
+          "category": "EURO JET",
+          "code": "EURO JET 10-090",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 114, B = 90, C = 80",
+          "category": "JET CC",
+          "code": "JET CC 4x3 10/090",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 114, B = 90, C = 80",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 4x3 10/090",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 120, B = 102, C = 105",
           "category": "COLUMBUS",
           "code": "COL 12-100",
           "content": ["HDPE", "PA6"]
         },
         {
-          "name": [140, 114, 117],
+          "name": "A = 138, B = 115, C = 100",
+          "category": "JET CC",
+          "code": "JET CC 5x4 13/100",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 138, B = 115, C = 75",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 5x4 13/100",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 140, B = 114, C = 117",
           "category": "COLUMBUS",
           "code": "COL 14-115",
           "content": ["HDPE", "PA6"]
         },
         {
-          "name": [160, 126, 128],
+          "name": "A = 142, B = 126, C = 84",
+          "category": "JET",
+          "code": "JET 13-120",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 145, B = 122, C = 83",
+          "category": "EURO JET",
+          "code": "EURO JET 13-120",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 156, B = 157, C = 113",
+          "category": "JET",
+          "code": "JET 15-140",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 160, B = 131, C = 85",
+          "category": "EURO JET",
+          "code": "EURO JET 15-120",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 160, B = 126, C = 128",
           "category": "COLUMBUS",
           "code": "COL 16-125",
           "content": ["HDPE", "PA6"]
         },
         {
-          "name": [180, 132, 135],
+          "name": "A = 164, B = 115, C = 100",
+          "category": "JET CC",
+          "code": "JET CC 6x4 16/100",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 164, B = 115, C = 75",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 6x4 16/100",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 180, B = 132, C = 135",
           "category": "COLUMBUS",
           "code": "COL 18-130",
           "content": ["HDPE", "PA6"]
         },
         {
-          "name": [200, 140, 145],
+          "name": "A = 186, B = 115, C = 100",
+          "category": "JET CC",
+          "code": "JET CC 7x4 18/100",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 186, B = 115, C = 75",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 7x4 18/100",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 188, B = 149, C = 93",
+          "category": "EURO JET",
+          "code": "EURO JET 18-140",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 189, B = 150, C = 112",
+          "category": "JET",
+          "code": "JET 18-140",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 192, B = 140, C = 130",
+          "category": "JET CC",
+          "code": "JET CC 7x5 18/140",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 192, B = 140, C = 100",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 7x5 18/140",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 200, B = 140, C = 145",
           "category": "COLUMBUS",
           "code": "COL 20-140",
           "content": ["HDPE", "PA6"]
         },
         {
-          "name": [225, 145, 153],
+          "name": "A = 207, B = 157, C = 113",
+          "category": "JET",
+          "code": "JET 20-140",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 207, B = 176, C = 115",
+          "category": "EURO JET",
+          "code": "EURO JET 20-165",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 214, B = 180, C = 129",
+          "category": "JET",
+          "code": "JET 20-170",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 215, B = 170, C = 155",
+          "category": "JET CC",
+          "code": "JET CC 8x6 20/170",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 215, B = 170, C = 120",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 8x6 20/170",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 216, B = 140, C = 130",
+          "category": "JET CC",
+          "code": "JET CC 8x5 20/140",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 216, B = 140, C = 100",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 8x5 20/140",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 225, B = 145, C = 153",
           "category": "COLUMBUS",
           "code": "COL 22-145",
           "content": ["HDPE", "PA6"]
         },
         {
-          "name": [250, 152, 160],
+          "name": "A = 228, B = 152, C = 112",
+          "category": "JET",
+          "code": "JET 22-140",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 242, B = 172, C = 117",
+          "category": "EURO JET",
+          "code": "EURO JET 23-165",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 242, B = 140, C = 130",
+          "category": "JET CC",
+          "code": "JET CC 9x5 23/140",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 242, B = 170, C = 155",
+          "category": "JET CC",
+          "code": "JET CC 9x6 23/170",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 242, B = 170, C = 120",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 9x6 23/170",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 242, B = 140, C = 100",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 9x5 23/140",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 243, B = 175, C = 133",
+          "category": "JET",
+          "code": "JET 23-170",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 250, B = 152, C = 160",
           "category": "COLUMBUS",
           "code": "COL 25-150",
           "content": ["HDPE", "PA6"]
         },
         {
-          "name": [275, 156, 165],
+          "name": "A = 252, B = 158, C = 125",
+          "category": "JET",
+          "code": "JET 23-145",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 266, B = 170, C = 155",
+          "category": "JET CC",
+          "code": "JET CC 10x6 26/170",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 266, B = 170, C = 120",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 10x6 26/170",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 268, B = 140, C = 130",
+          "category": "JET CC",
+          "code": "JET CC 10x5 26/140",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 268, B = 140, C = 100",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 10x5 26/140",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 275, B = 156, C = 165",
           "category": "COLUMBUS",
           "code": "COL 27-155",
           "content": ["HDPE", "PA6"]
         },
         {
-          "name": [300, 163, 170],
+          "name": "A = 285, B = 200, C = 205",
+          "category": "JET CC",
+          "code": "JET CC 11x7 D 30/200",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 285, B = 200, C = 170",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 11x7 D 30/200",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 292, B = 170, C = 116",
+          "category": "EURO JET",
+          "code": "EURO JET 28-165",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 292, B = 170, C = 155",
+          "category": "JET CC",
+          "code": "JET CC 11x6 28/170",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 292, B = 170, C = 120",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 11x6 28/170",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 293, B = 175, C = 133",
+          "category": "JET",
+          "code": "JET 28-170",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 300, B = 163, C = 170",
           "category": "COLUMBUS",
           "code": "COL 30-160",
           "content": ["HDPE", "PA6"]
         },
         {
-          "name": [325, 175, 180],
+          "name": "A = 302, B = 200, C = 175",
+          "category": "JET CC",
+          "code": "JET CC 11x7 30/200",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 302, B = 230, C = 205",
+          "category": "JET CC",
+          "code": "JET CC 11x8 30/230",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 302, B = 230, C = 170",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 11x8 30/230",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 302, B = 200, C = 145",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 11x7 30/200",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 318, B = 186, C = 135",
+          "category": "EURO JET",
+          "code": "EURO JET 30-180",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 320, B = 202, C = 157",
+          "category": "JET",
+          "code": "JET 30-190",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 320, B = 228, C = 168",
+          "category": "JET",
+          "code": "JET 30-215",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 320, B = 230, C = 210",
+          "category": "JET CC",
+          "code": "JET CC 12x8 32/230",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 325, B = 175, C = 180",
           "category": "COLUMBUS",
           "code": "COL 32-170",
           "content": ["HDPE", "PA6"]
         },
         {
-          "name": [350, 190, 190],
+          "name": "A = 326, B = 200, C = 175",
+          "category": "JET CC",
+          "code": "JET CC 12x7 32/200",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 326, B = 200, C = 145",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 12x7 32/200",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 328, B = 230, C = 170",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 12x8 32/230",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 339, B = 222, C = 145",
+          "category": "EURO JET",
+          "code": "EURO JET 33-215",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 340, B = 200, C = 205",
+          "category": "JET CC",
+          "code": "JET CC 12x7 D 32/200",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 340, B = 200, C = 170",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 12x7 D 32/200",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 350, B = 228, C = 168",
+          "category": "JET",
+          "code": "JET 33-215",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 350, B = 190, C = 190",
           "category": "COLUMBUS",
           "code": "COL 35-185",
           "content": ["HDPE", "PA6"]
         },
         {
-          "name": [400, 206, 207],
+          "name": "A = 370, B = 228, C = 168",
+          "category": "JET",
+          "code": "JET 35-215",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 378, B = 200, C = 175",
+          "category": "JET CC",
+          "code": "JET CC 14x7 37/200",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 378, B = 200, C = 145",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 14x7 37/200",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 380, B = 230, C = 205",
+          "category": "JET CC",
+          "code": "JET CC 14x8 37/230",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 380, B = 230, C = 170",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 14x8 37/230",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 383, B = 219, C = 142",
+          "category": "EURO JET",
+          "code": "EURO JET 37-215",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 390, B = 228, C = 168",
+          "category": "JET",
+          "code": "JET 37-215",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 400, B = 206, C = 207",
           "category": "COLUMBUS",
           "code": "COL 40-200",
           "content": ["HDPE", "PA6"]
+        },
+        {
+          "name": "A = 420, B = 228, C = 168",
+          "category": "JET",
+          "code": "JET 40-215",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 430, B = 230, C = 205",
+          "category": "JET CC",
+          "code": "JET CC 16x8 42/230",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 430, B = 230, C = 170",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 16x8 42/230",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 455, B = 223, C = 143",
+          "category": "EURO JET",
+          "code": "EURO JET 44-215",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 460, B = 228, C = 168",
+          "category": "JET",
+          "code": "JET 44-215",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 482, B = 230, C = 205",
+          "category": "JET CC",
+          "code": "JET CC 18x8 47/230",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 482, B = 230, C = 170",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 18x8 47/230",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 519, B = 225, C = 211",
+          "category": "MaxiJET",
+          "code": "MaxiJET 20x8 52/230",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 520, B = 228, C = 168",
+          "category": "JET",
+          "code": "JET 50-215",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 532, B = 200, C = 178",
+          "category": "JET CC",
+          "code": "JET CC 20x7 52/200",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 532, B = 230, C = 205",
+          "category": "JET CC",
+          "code": "JET CC 20x8 52/230",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 532, B = 200, C = 148",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 20x7 52/200",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 532, B = 230, C = 170",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 20x8 52/230",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 582, B = 230, C = 205",
+          "category": "JET CC",
+          "code": "JET CC 22x8 57/230",
+          "content": ["HDPE", "PA6", "PU"]
+        },
+        {
+          "name": "A = 582, B = 230, C = 170",
+          "category": "JET CC Low Profile",
+          "code": "JET CC 22x8 57/230",
+          "content": ["HDPE", "PA6", "PU"]
         }
       ]
     }

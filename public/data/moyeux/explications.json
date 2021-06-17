@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "section_title": "Type",
+      "sectionTitle": "Type",
       "questions": [
         {
           "title": "Vécobloc / Taperlock",
@@ -10,11 +10,11 @@
       ]
     },
     {
-      "section_title": "Unité",
+      "sectionTitle": "Unité",
       "questions": []
     },
     {
-      "section_title": "Alésage",
+      "sectionTitle": "Alésage",
       "questions": [
         {
           "title": "Notes",

@@ -21,6 +21,8 @@
   // console.groupEnd();
   // console.table(selection);
 
+  import { getContext } from "svelte";
+  const { newSelection } = getContext("newSelection");
   function setSelection() {
     if (index < selection.length - 1) {
       for (let i = index + 1; i < selection.length; i++) {
@@ -30,36 +32,67 @@
     newSelection();
     // console.log(selection);
   }
+  import { getCookie } from "../functions/manageCookie";
 
-  import { getContext } from "svelte";
-  const { newSelection } = getContext("newSelection");
+  let preferences = getCookie("filtersPreferences");
+  let isGrouped = preferences[index].groupBy;
+  console.log(isGrouped);
+  let hasCategory = array.every((element) => element.category);
+  if (isGrouped && hasCategory && array.length > 0) {
+    console.log("index", index);
+    let categories = [];
+    array.forEach((e) => {
+      let categoryIndex = categories.findIndex((c) => e.category == c.name);
+      if (categoryIndex == -1 ? true : false) {
+        categories.push({ name: e.category, content: [e] });
+      } else {
+        categories[categoryIndex]["content"].push(e);
+      }
+    });
+    array = categories;
+  }
 </script>
 
 <!-- svelte-ignore a11y-no-onchange -->
 {#if array.length > 0}
-  {#if array.length > 8}
+  {#if !isGrouped}
+    {#if array.length > 8}
+      <select bind:value={selection[index]} on:change={setSelection}>
+        <option disabled selected value={null}>-</option>
+        {#each array as item}
+          <option value={item.name || item}>
+            {item.name || item}
+          </option>
+        {/each}
+      </select>
+    {:else}
+      <div class="radio-list">
+        {#each array as item, i}
+          <label>
+            <input
+              type="radio"
+              bind:group={selection[index]}
+              on:change={setSelection}
+              value={item.name || item}
+            />
+            <span>{item.name || item}<span /></span></label
+          >
+        {/each}
+      </div>
+    {/if}
+  {:else}
     <select bind:value={selection[index]} on:change={setSelection}>
       <option disabled selected value={null}>-</option>
-      {#each array as item}
-        <option value={item.name || item}>
-          {item.name || item}
-        </option>
+      {#each array as category}
+        <optgroup label={category.name}>
+          {#each category.content as item}
+            <option value={item.name || item}>
+              {item.name || item}
+            </option>
+          {/each}
+        </optgroup>
       {/each}
     </select>
-  {:else}
-    <div class="radio-list">
-      {#each array as item, i}
-        <label>
-          <input
-            type="radio"
-            bind:group={selection[index]}
-            on:change={setSelection}
-            value={item.name || item}
-          />
-          <span>{item.name || item}<span /></span></label
-        >
-      {/each}
-    </div>
   {/if}
 {:else}
   <p style="color:crimson">

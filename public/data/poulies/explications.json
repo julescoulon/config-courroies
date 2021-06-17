@@ -1,19 +1,19 @@
 {
   "data": [
     {
-      "section_title": "Pour quels types de moyeux ?",
+      "sectionTitle": "Pour quels types de moyeux ?",
       "questions": []
     },
     {
-      "section_title": "Pour quelle section de courroies ?",
+      "sectionTitle": "Pour quelle section de courroies ?",
       "questions": []
     },
     {
-      "section_title": "Nombre de gorges",
+      "sectionTitle": "Nombre de gorges",
       "questions": []
     },
     {
-      "section_title": "Diamètre",
+      "sectionTitle": "Diamètre",
       "questions": []
     }
   ]

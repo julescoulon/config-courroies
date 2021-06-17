@@ -1,23 +1,23 @@
 {
   "data": [
     {
-      "section_title": "Test A",
+      "sectionTitle": "Test A",
       "questions": []
     },
     {
-      "section_title": "Test B",
+      "sectionTitle": "Test B",
       "questions": []
     },
     {
-      "section_title": "Test C",
+      "sectionTitle": "Test C",
       "questions": []
     },
     {
-      "section_title": "Test D",
+      "sectionTitle": "Test D",
       "questions": []
     },
     {
-      "section_title": "Test E",
+      "sectionTitle": "Test E",
       "questions": []
     }
   ]

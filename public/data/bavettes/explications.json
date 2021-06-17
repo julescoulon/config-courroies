@@ -1,16 +1,16 @@
 {
   "data": [
     {
-      "section_title": "Type"
+      "sectionTitle": "Type"
     },
     {
-      "section_title": "Dureté"
+      "sectionTitle": "Dureté"
     },
     {
-      "section_title": "Epaisseur"
+      "sectionTitle": "Epaisseur"
     },
     {
-      "section_title": "Largeur"
+      "sectionTitle": "Largeur"
     }
   ]
 }

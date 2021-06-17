@@ -1,0 +1,17 @@
+{
+  "data": [
+    {
+      "sectionTitle": "Type de godets",
+      "questions": []
+    },
+    {
+      "sectionTitle": "Dimensions",
+      "sortOptions": ["A", "B", "C"],
+      "questions": []
+    },
+    {
+      "sectionTitle": "Epaisseur / Type",
+      "questions": []
+    }
+  ]
+}

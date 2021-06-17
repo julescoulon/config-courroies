@@ -1,6 +1,11 @@
 <script>
   import { fetchData, getData } from "./functions/fetchData";
   import { filterData } from "./functions/filterData";
+  import {
+    setCookie,
+    getCookie,
+    wipeAllCookies,
+  } from "./functions/manageCookie";
 
   import Code from "./components/Code.svelte";
   import Form from "./components/Form.svelte";
@@ -11,8 +16,9 @@
   const products = [
     { name: "Courroies", value: "courroies", depth: 3 },
     { name: "Poulies trapézoïdales", value: "poulies", depth: 4 },
-    { name: "Bavettes caoutchouc", value: "bavettes", depth: 3 },
+    { name: "Bavettes caoutchouc", value: "bavettes", depth: 4 },
     { name: "Moyeux amovibles", value: "moyeux", depth: 3 },
+    { name: "Godets d'élévateurs", value: "godets", depth: 3 },
 
     // { name: "Test", value: "test", depth: 5 },
   ];
@@ -25,8 +31,7 @@
   let explications = undefined;
 
   function initialfetchAll() {
-    localStorage.clear();
-
+    wipeAllCookies();
     products.forEach((element) => {
       fetchData(element.value, "index");
       fetchData(element.value, "explications");
@@ -40,6 +45,14 @@
     displayData = filterData(getData(request, "index"), selection);
     explications = getData(request, "explications");
     objectDepth = products.find((element) => element.value == request).depth;
+    setCookie(
+      "filtersPreferences",
+      `[${Array(objectDepth).fill(
+        JSON.stringify({ sortBy: "-", groupBy: false })
+      )}]`
+    );
+
+    console.log(getCookie("filtersPreferences"));
   }
 
   import { setContext } from "svelte";
@@ -47,9 +60,13 @@
   setContext("newSelection", { newSelection });
   setContext("fetchProduct", { fetchProduct });
 
-  console.log(displayData);
   function newSelection() {
-    displayData = filterData(getData(request, "index"), selection);
+    let filtersPreferences = getCookie("filtersPreferences");
+    displayData = filterData(
+      getData(request, "index"),
+      selection,
+      filtersPreferences
+    );
   }
 </script>
 
