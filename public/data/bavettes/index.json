@@ -72,7 +72,7 @@
           ]
         },
         {
-          "name": "63 shore (rouge)",
+          "name": "63 shore (noir)",
           "content": [
             {
               "name": "6 mm",
@@ -122,7 +122,29 @@
     },
     {
       "name": "TRIS",
-      "content": []
+      "content": [
+        {
+          "name": "Racleur bi-shore (noir vert noir) pour nettoyage",
+          "content": [
+            {
+              "name": "15 mm",
+              "content": [100, 125, 150, 200]
+            },
+            {
+              "name": "20 mm",
+              "content": [100, 125, 150, 200]
+            },
+            {
+              "name": "25 mm",
+              "content": [125, 150, 200]
+            },
+            {
+              "name": "30 mm",
+              "content": [125, 150, 200]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
